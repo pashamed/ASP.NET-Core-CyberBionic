@@ -1,0 +1,96 @@
+﻿body {
+}
+
+
+.Mypadding {
+    padding: 3% 0 15% 0;
+}
+
+.padding-boreder {
+    padding: 3% 0 3% 0;
+}
+
+.Divpadding {
+    padding: 5% 0 10% 0;
+}
+
+.btnMy {
+    width: 250px;
+}
+.code {
+    background-color: lightgray;
+}
+
+.mycolor-form {
+    background-color:blanchedalmond;
+}
+
+
+.mypadding-form {
+    padding: 7% 10% 7% 10%;
+}
+
+.myunselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.darktheme .w3-code {
+    background-color: rgb(40,44,52);
+    color: white;
+    border-left-color: rgb(40,44,52)
+}
+
+
+.w3-code {
+    width: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.w3-example {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none !important;
+}
+
+.w3-example {
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+}
+
+.w3-example {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none !important;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+}
+
+
+.form-w3 {
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none !important;
+    background-color: palegoldenrod;
+    border-radius: 5px;
+    padding: 0.01em 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none !important;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) !important;
+}

@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container marketing" >
+
+    <div class="container px-1 py-1" id="hanging-icons">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+            <div class="col d-flex align-items-start">
+                <div>
+                    <div class="blockOffsetHeight101">
+                        <h2>
+                            Завдання 1
+
+                        </h2>
+                        <p style="color:grey;">
+                            <i style="color:grey;">
+
+                                Создайте MVC приложений с одним представлением. <br />
+                                В представлении должно отображаться сообщение, которое находиться в файле конфигурации. <br />
+                                Сделайте так чтобы приложение обновляло сообщение в представлении если значение менялось в конфигурационном файле. <br />
+                                Для обновления данных в представлении приложение не нужно перегружать.<br />
+                            </i>
+                        </p>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <a asp-controller="Logging" asp-action="ReloadChangeConfiguration" class="w-100 btn btn-lg btn-outline-primary">
+                            Перейти
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <div class="blockOffsetHeight102">
+                        <h2>
+                            Завдання 2
+
+                        </h2>
+                        <p style="color:grey;">
+                            <i>
+                                Создайте MVC приложение котором реализуйте форму, которая будет отправлять email сообщение. <br />
+                                В форме сделайте поля вводов – получатель, тема, сообщение. <br />
+                                Для отправки сообщения зарегистрируйтесь на каком-то почтовом сервере. <br />
+                                Ваше приложение должно отправлять сообщения пользуясь данными этого почтового сервера. <br />
+                                Данные для отправки подключения к серверу вынесите в файл конфигурации.<br />
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="col d-flex align-items-start">
+                        <a asp-controller="Logging" asp-action="SendEmail" class="w-100 btn btn-lg btn-outline-primary">
+                            Перейти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div>
+                    <div class="blockOffsetHeight81">
+                        <h2>
+                            Завдання 3
+
+                        </h2>
+                        <p style="color:grey;">
+                            <i style="color:grey;">
+                                Создайте middleware, который в случае исключений во время обработки запроса будет логировать ошибку в файл.<br />
+                            </i>
+                        </p>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <a asp-controller="Logging" asp-action="LoggingToFile" class="w-100 btn btn-lg btn-outline-primary">
+                            Перейти
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <div class="blockOffsetHeight82">
+                        <h2>
+                            Завдання 4
+
+                        </h2>
+                        <p style="color:grey;">
+                            <i>
+                                Установите seq и поменяйте настройки приложения из предыдущего задания, таким образом, чтобы значения записывались в seq, а не в файл.<br />
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="col d-flex align-items-start">
+                        <a asp-controller="Logging" asp-action="SeqLogging" class="w-100 btn btn-lg btn-outline-primary">
+                            Перейти
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <div class="blockOffsetHeight83">
+                        <h2>
+                            Завдання 5
+
+                        </h2>
+                        <p style="color:grey;">
+                            <i>
+                                Создайте MVC приложений с одним представлением. <br />
+                                В представлении должно отображаться сообщение, которое находиться в файле конфигурации.<br />
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="col d-flex align-items-start">
+                        <a asp-controller="Logging" asp-action="GetConfiguration" class="w-100 btn btn-lg btn-outline-primary">
+                            Перейти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container marketing">
+            <img style="width:100%;height:100%;" src="https://www.blazeclan.com/wp-content/uploads/2018/07/Webp-net-compress-image.png" alt="Вид на горы">
+        </div>
+
+</div>
+
+
+
+
+<script>
+    var height101 = document.querySelector(".blockOffsetHeight101").offsetHeight;
+    var height102 = document.querySelector(".blockOffsetHeight102").offsetHeight;
+
+    if (height101 > height102) {
+        document.querySelector(".blockOffsetHeight102").style.height = height101 + 16 + "px";
+    }
+    else {
+        document.querySelector(".blockOffsetHeight101").style.height = height102 + 16 + "px";
+    }
+
+    var height103 = document.querySelector(".blockOffsetHeight103").offsetHeight;
+    var height104 = document.querySelector(".blockOffsetHeight104").offsetHeight;
+    var height105 = document.querySelector(".blockOffsetHeight105").offsetHeight;
+    if (height103 > height104 && height103 > height105) {
+        document.querySelector(".blockOffsetHeight104").style.height = height103 + 16 + "px";
+        document.querySelector(".blockOffsetHeight105").style.height = height103 + 16 + "px";
+    }
+    else if (height104 > height103 && height104 > height105) {
+        document.querySelector(".blockOffsetHeight103").style.height = height104 + 16 + "px";
+        document.querySelector(".blockOffsetHeight105").style.height = height104 + 16 + "px";
+    }
+    else {
+        document.querySelector(".blockOffsetHeight103").style.height = height105 + 16 + "px";
+        document.querySelector(".blockOffsetHeight104").style.height = height105 + 16 + "px";
+    }
+
+
+</script>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Months";
+    Layout = "_LayoutMenu";
+}
+
+<div class="container marketing " style="padding: 0 0 0 20px">
+    <div class="Mypadding">
+        <h2>Месяца</h2>
+        <table>
+            @*
+            Model - свойство доступное в представлениях. Дает возможность получить доступ к модели, которую передал контролер.
+            В данный момент в свойстве Model находиться коллекция экземпляров класса Product. (см. параметр метода View в контроллере).
+            Переменная item типа dynamic но на момент выполнения кода в ней будет находиться экземпляров класса Product.
+            *@
+            @foreach (var item in @ViewBag.Months)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                </tr>
+            }
+        </table>
+
+    </div>
+
+</div>
